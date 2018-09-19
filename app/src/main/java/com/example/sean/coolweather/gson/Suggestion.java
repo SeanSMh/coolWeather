@@ -3,7 +3,7 @@ package com.example.sean.coolweather.gson;
 import com.google.gson.annotations.SerializedName;
 
 public class Suggestion {
-    @SerializedName("conf")
+    @SerializedName("comf")
     public Comfort comfort;
 
     @SerializedName("cw")
