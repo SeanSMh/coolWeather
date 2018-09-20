@@ -97,3 +97,22 @@ public class Utility {
         return null;
     }
 }
+
+/*
+ *智能语音注册一个广播监听器
+ publicclassmyBroadcastReceiverextendsBroadcastReceiver{
+ Toast.makeText(context,"安装成功),Toast.LENGTH_SHORT).show();
+ abortBroadcast();//中断广播，减少资源消耗
+ }
+
+ 在AndroidManifest.xml中进行注册
+ <intent-filterandroid:priority="100">//设定优先级，保证智能语音线接收到广播
+ <actionandroid:name="com.example.类名.DOWNLOAD_SUCCESS"/>
+ <intent-filter>
+
+ 在比亚迪应用市场发送广播,如果安装成功，就发送广播
+ Intentintent=newIntent("com.example.类名.DOWNLOAD_SUCCESS");
+ *sendOrderedBroadcast(intent);//发送有序广播，使得一个app接收到广播之后，其他的app才能接着接收广播
+
+ *
+ **/
